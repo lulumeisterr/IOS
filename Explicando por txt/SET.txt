@@ -1,0 +1,8 @@
+Set - Ela aje como um mistu de array e dicionario , Ela é  uma Coleção nao ordenada de 
+objeto que so aceita Elementos do mesmo tipo
+
+- Não possui um indice
+- Não aceitao elementos iguais
+
+
+
