@@ -1,0 +1,82 @@
+Arrays iOS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Criando Arrays
+var names : [String] = ["Nome"]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Criando um Array Vazio
+var arrayClear : [Int] = [] //-> Eu so posso criar um arrayVazio se eu setar o tipo de dado do meu array
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Criando um arrayNulo
+var arrayNill : [String]?
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Quando eu quero inteiros UInt
+var ages : [UInt8] = [9 , 10 ,5 , 6 ,7]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Saber quantos elementos eu tenho no array
+
+var gues = ["Joao" , "Paula" , "Lucas" , "Jaber"]
+
+print(guest.count) //Devolvendo a quantidade de itens no array~
+
+print(guest.isEmpty) Devolve um bool dizendo se esta vazio ou nao
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Sintaxe de subscript - Acessar um elemento do array
+
+let pegarUmElemento = gues[1]
+
+// Modificando elemento do array
+
+guest[0] = "juju"
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Adicionando os elementos do array usando rangers
+//Entre os indice 0 e 1 eu quero mudar meu elemento
+
+//Quero remover os 2 primeiro e colocar 3 no lugar
+	//Substituindo no indice 0 e 1 por  mais elementos
+gues[0...1] = ["Marola" , "Pera"]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+print(guet.first) -> Pega o primeiro elemento do array , Ele devolve um option
+last -> Ultimo elemento
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Adicionando elementos no array
+
+guest += ["Jose" , "Ronaldo" , "Robinho"]
+
+//Metodo append , Adiciona um elemento
+
+guest.apprend("Macarrao") - > Ele adiciona no final do seu array
+
+//Adicionar um elemento na posicao do array
+guest.insert("Lucas", at : 2)
+
+//Removendo elementos do array
+
+guest.removeFirst() -> Removendo primeiro elemento
+guest.removeLast() -> Removendo ultimo elemento
+guest.remove(at:2) -> Removendo na posicao 2
+guest.removeAll() -> Removendo todos elementos
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Verificar elementos no array
+
+//Utilizando o .contains
+guest.contains("Lucas")
+
+
