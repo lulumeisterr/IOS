@@ -1,0 +1,54 @@
+//Dicionarios
+
+- Não são coleções ordenadas
+- Recuperar elementos , basta utilizar a chave que esta vinculada a um elemento
+
+var states = [
+
+//Chave     //Valor
+
+"SP"   :     "São Paulo"
+"AC"   :     "Acre"
+"Rj"    :      "Rio de janeiro"
+
+]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Adicionando um novo estado
+
+states["GO"]  = "Goiaz"
+
+//Modificando elemento associado a uma chave
+
+states["GO"]  = "Goiás"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Recuperando um valor do meu dicionario
+
+let myState = states["AL"]
+
+- Necessita fazer o Bind para exibir sem o optional
+
+if let myStates = states["AL"]{
+	print(state)
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Remover o item de um dicionario
+
+states["GO"] = nill
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Retornar todas as chaves do meu dicionario , Eu preciso retonar ela dentro de um array
+
+let keys = Array(states.keys)
+print(keys)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Dicionario de maneira explicita
+
+	             //Chave , Valor
+	             //Nome e Nota
+var StudentGrade : [String , Double] = [:] <- Inicializando um dicionario Vazio
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
