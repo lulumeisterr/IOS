@@ -1,0 +1,81 @@
+//Enumeradores - É um tipo que permite que representa um conjunt ou um grupo nomeado
+de opções que pode ter valores associados aos mesmo
+
+//Definir a direção que meu usuario quer pelo GPS
+
+enum CompassPoint {
+
+  case north
+  case east
+  case west
+  case south
+  
+
+}
+
+//Definindo o tipo
+var direction = CompassPoint.north
+
+//Vantagem aqui eu posso usar apenas o valor
+
+var direction2 : CompassPoint = .north
+
+direction = .south
+
+//Enum curto
+enum SeatPosition {
+  case aisle , middle , window 
+}
+
+
+var passenferSeat = SeatPosition.window
+
+//Switch e Enum
+ switch passangerSeat {
+ 
+      case .aisle:
+    print"O Passageiro esta sentado no corredor")
+    
+      case .midle:
+    print"O Passageiro esta sentado no meio")
+    
+      case .window:
+    print"O Passageiro esta sentado na janela")
+   
+ }
+ 
+ 
+ //Enumeradores podem vir alimentados com um valor bruto padrao
+ 
+ //Enum curto
+enum SeatPosition {
+  case aisle = "corredor" , middle = "meio" , window = "janela" 
+}
+
+print(passengerSeat.rawValue)
+
+
+//Valores Associados - Podemos denifir o tipo de valor em um dos elementos
+
+enum Measure {
+
+case weight(Double) - valor associado
+case age(Int)
+case size(width : Double , height : Double) //Tupla
+
+}
+
+let measure : Measure = .age(39)
+
+switch measure {
+
+case .weight(let weight):
+  print("O Seu peso é : ")
+  
+  case .age(let age): - Posso associar se com uma variavel
+    print("A Sua idade é \(age)") 
+
+
+}
+
+
