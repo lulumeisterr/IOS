@@ -1,0 +1,111 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var str = "Hello, playground"
+
+//Vetor nullo
+var nomes : [String] = [];
+
+
+//Vetor preenchido
+var Nomes : [String] = ["Lucas" , "Luana" , "Larissa" , "Laura"];
+
+//Verificando e Adicionando Elementos em um vetor usando hanger
+
+for _ in Nomes[0...0]{
+    if(Nomes.contains("Lucas")){
+        Nomes.insert("Jaber", at: 0)
+    }else{
+        Nomes.removeAll();
+    }
+}
+
+print("Nomes adicionados : \(Nomes)");
+
+//==============================================================//
+
+// Dicionario Vazio
+
+var Dicionario = [
+    "Letra" : "A"
+]
+
+// Adicionado no dicionario e exibindo um Dicionario
+
+for _ in Dicionario{
+    Dicionario["Nome"] = "Lucas";
+    print(Dicionario)
+}
+
+// Removendo um item do dicionario
+
+Dicionario["Nome"] = nil;
+
+print(Dicionario)
+
+// Retornando a Key do dicionario
+
+let keys = Array(Dicionario.keys)
+print(keys)
+
+//============================================================//
+
+
+// Tupla agrupamento de valor
+
+let Tupla : (Estado : String , Nome : String , Idade : Int)
+Tupla = ("SP" , "Lucas" , 20);
+
+print(Tupla)
+
+// Recuperando apenas um campo da Tupla
+print(Tupla.Nome)
+
+//================================================================
+
+//print("Resultado da soma : \(Soma(a: 10, b: 50))")
+
+
+//================================================================//
+
+// Funca que aceitam n parametros , Somando varios valores apartir de um setado
+
+
+func sumValues(SomaValor : Int , OutroValor values : Int...) -> Int {
+    var result = SomaValor
+    
+    for value in values {
+        result += value
+    }
+    return result
+}
+
+sumValues(SomaValor: 10, OutroValor: 1 , 1 , 1 , 1 , 1)
+
+
+//==========================================================//
+
+typealias Operacao = (Int , Int) -> Int // Criando um apelido
+func Calculadora(named Operacao : String) -> Operacao{
+    
+    func Soma(a : Int , b : Int) -> Int {
+        return a+b;}
+    
+    func divide(a : Int , b : Int) -> Int {
+        return a/b;}
+    
+    switch Operacao.lowercased(){
+    case "soma":
+        return Soma
+    default:
+        return divide
+    }
+}
+
+let operacao = Calculadora(named: "divide")
+print("Resultado : \(operacao(10,10))")
+
+
+
+
