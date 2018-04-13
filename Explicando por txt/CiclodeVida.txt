@@ -1,0 +1,54 @@
+Ciclo de vida iOS
+
+Estados de um Aplicativo
+
+1° Não esta sendo executado : O App nao foi aberto ou foi fechado pelo sistema [ Entra no estado de foreground ]
+2° Inativo : Esta rodando em primeiro plano , mas nao esta recebendo eventos
+3° Ativo : Esta rodando em primeiro plano , recebendo os eventos do usuario
+4° Background : Quando ele esta executando codigo mas o usuario não esta vendo
+5° Suspenso : Esta em background mas n esta executando nenhum codigo. Ou seja nao da nenhuma notificacao para o usuario
+
+Ciclo de vida do Aplicativo
+
+DidFinishLaunchingWithOptions : O App foi aberto e quando terminou de carregar este metodo foi acionado. E Logo na sequencia Foi acionado
+applicationDidBecomeActive : Nossa apliacao já esta ativa , para o usuario poder utilizar
+
+Quando eu saio do App
+
+applicationWillResignActive : Avisa que o app vai entrar em estado de background
+applicationDidEnterBackground :
+
+Quando eu volto para o App 
+
+WillEnterForegound : Ele acorda o App
+DidBecomective : O App já esta em foreground ou seja ja está ativo
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ciclo de vida de uma View
+
+viewDidLoad - View Já foi carregada
+
+ViewWillApear(Vai aparecer) - Sua view vai aparecer
+ViewDidAppear(Ja Apareceu) - Esta efetivamente visivel na tela (Avisa se seu app esta consumindo muita memoria e é enviado o metodo didReceiveMemoryWarning)
+didReceiveMemoryWarning - Recebo um aviso de memoria (Deve manipular seu app para evitar de ser suspenso)
+ViewWillDisappear (irá desaparecer) - Quando eu vou para outra tela do meu app (View desaparece)
+ViewDidDisappear(Ja desapareceu) - é chamado quando sua viewDisappear desapareceu de vez
+
+** Quando a view ja existe " Quando eu vou para uma tela e volto " , o metodo viewDidLoad e LoadView não são executados
+
+
+Outlet -> A Maneira que controller conversa com a tela
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1° 
+Selecionar Editor 
+Embed In 
+Naviggation Controller 
+
+2° Clicar no elemento e segurar a tecla ctrl e arrastar para a outrao view1
+
+3° Criar uma nova classe para vincular a segunda view2
+
+4 ° Ir no storyBoard , Selecionar a 2 view , Clicar na Controller(bolinha dragonball) e dizer qual classe esta vinculada a ela que seria a SecondViewController(que acabamos de criar)
+
+5 ° Ir para classe Delegate : Tudo o'que acontece no app esta nesta classe
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
