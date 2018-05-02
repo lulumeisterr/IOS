@@ -23,3 +23,10 @@ Existem dois tipos de segue
 - 10 - Agora devemos Selecionar o botão que irá retroceder uma pagina , selecionar o mesmo e segurar o ctrl e arrastar Para a aba de desenvolvimento “main” , Selecionar um Action para criar um método
 
 - 11 - Devemos implementar o método que irá retroceder , esse método é : dissmiss - Passar o primeiro parâmetro como true
+
+- 12 - Voltando para a primeira tela que você deseja , você devera escolher a tela e entrar no main dela.
+
+- 13 devera criar um método IBactcion na tela em que deseja voltar e passar um parâmetro do tipo UIStoryboardSegue.
+
+- 14 Depois devemos ir para o mainStoryBoard , e Selecionar a tela onde o usuário clicará para voltar , segurar o botão com o ctrl e arrastar ate o exit perto da bolinha dragonball
+
