@@ -1,0 +1,25 @@
+Existem dois tipos de segue
+
+1 - Segue vinculada a um botão
+- Segurar o ctrl e arrastar para a próxima tela
+
+
+2 - Segue vinculada a tela 
+
+- 1  / Clicar no elemento ˜dragonball”
+- 2  / Segura o ctrl e arrasta para a próxima tela mas
+- 3  / Deve chamar via código , Devemos fazer o botão chamar a segue da tela
+- 4  / Dar nome para a segue no identificador
+- 5  / Criar uma ação para o botão chamar a segue criada
+- 6 / Selecionar a viewController clicando no botão criado e arrastar para a área de codificação “main”
+- Selecionar a opção Action para criar um método
+
+- 7 Agora necessitamos chamar o método performSegue , para executar uma segue e no parâmetro withIdentifier Colocar o nome do identificador da segue.
+
+- 8 Sempre em que você toca em uma View vc deve chamar o método touchBegan , ai vc implementa o método para criar uma segue.
+
+- 9  Voltando para tela anterior , Você primero deve criar uma ViewController para a sua cena. Apertando Command + n Depois você deve identificar a sua SecondViewController , Selecione a sua View e click em Identify e digite o nome da 2view
+
+- 10 - Agora devemos Selecionar o botão que irá retroceder uma pagina , selecionar o mesmo e segurar o ctrl e arrastar Para a aba de desenvolvimento “main” , Selecionar um Action para criar um método
+
+- 11 - Devemos implementar o método que irá retroceder , esse método é : dissmiss - Passar o primeiro parâmetro como true
